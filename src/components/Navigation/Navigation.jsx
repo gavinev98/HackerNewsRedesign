@@ -14,8 +14,6 @@ const Navigation = () => {
         <Navbar.Brand href="#home">
         <Logo />
       </Navbar.Brand>
-  
-   
           <NavItems>
             <StyledLink exact  to="/">news</StyledLink>
             <StyledLink to="/ask">ask</StyledLink>

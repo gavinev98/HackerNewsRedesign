@@ -1,10 +1,14 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import Post from '../Post/Post';
+
 
 const HomeScreen = () => {
     return (
-        <div>
-            This is testing some of the routes setup.
-        </div>
+        <Container fluid>
+               <Post />
+
+        </Container>
     );
 };
 
