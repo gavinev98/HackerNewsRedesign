@@ -12,7 +12,7 @@ const App = () => {
        <Navigation />
        <div>
         <Routes>
-        <Route path="/" element={<HomeScreen />}>
+        <Route exact path="/" element={<HomeScreen />}>
         </Route>
         </Routes>
       </div>
