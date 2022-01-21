@@ -6,7 +6,7 @@ import { StyledStack } from './Posts.styled';
 
 const Posts = () => {
     return (
-        <Container style={{ paddingTop : '5%'}}>
+        <Container style={{ paddingTop : '5%', paddingBottom: '5%'}}>
            <StyledStack  gap={3}>
                 <Post />
                 <Post />
