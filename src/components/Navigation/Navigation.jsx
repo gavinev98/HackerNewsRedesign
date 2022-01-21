@@ -19,6 +19,10 @@ const Navigation = () => {
           <NavItems>
             <StyledLink exact  to="/">news</StyledLink>
             <StyledLink to="/ask">ask</StyledLink>
+            <StyledLink to="/comments">comments</StyledLink>
+            <StyledLink to="/show">show</StyledLink>
+            <StyledLink to="/jobs">jobs</StyledLink>
+            <StyledLink to="/submit">submit</StyledLink>
           </NavItems>
 
         </Container>
