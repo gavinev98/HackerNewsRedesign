@@ -4,13 +4,12 @@ import styled from "styled-components";
 export const NavItems =  styled.nav`
     padding-left: 60%;
     display:flex;
-    color:black;
 
+    /*media queries for mobile devices */
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */
         display:contents;
-
-
+        padding:0;
         }
  }
 `

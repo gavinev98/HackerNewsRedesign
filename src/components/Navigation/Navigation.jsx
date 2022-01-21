@@ -16,7 +16,7 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <NavItems>
-            <Nav.Link href="#new">new</Nav.Link>
+            <Nav.Link activeStyle={{fontSize: '20px'}}  href="#new">new</Nav.Link>
             <Nav.Link href="#past">past</Nav.Link>
             <Nav.Link href="#comments">comments</Nav.Link>
             <Nav.Link href="#ask">ask</Nav.Link>
