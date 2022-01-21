@@ -3,8 +3,6 @@ import { Card } from 'react-bootstrap';
 import { CardBodyStyled } from './Post.styled';
 
 
-
-
 const Post = () => {
     return (  
        <CardBodyStyled>
@@ -12,6 +10,7 @@ const Post = () => {
         <Card.Body>
         <Card.Title>New front end framework released.</Card.Title>
         <Card.Subtitle>by user001</Card.Subtitle>
+        <Card.Text>Posted : 4 hours ago</Card.Text>
         </Card.Body>
       </CardBodyStyled>  
     );

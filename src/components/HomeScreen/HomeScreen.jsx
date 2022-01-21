@@ -1,13 +1,12 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Post from '../Post/Post';
+import Posts from '../Posts/Posts';
 
 
 const HomeScreen = () => {
     return (
         <Container fluid>
-               <Post />
-
+              <Posts />
         </Container>
     );
 };
