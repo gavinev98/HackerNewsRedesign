@@ -1,8 +1,9 @@
 import React from 'react';
-import { Nav, Navbar, Container } from 'react-bootstrap';
+import { Navbar, Container } from 'react-bootstrap';
 import { NavItems, StyledLink } from './Navigation.styled';
-import Logo from '../Logo/Logo';
-import { deepOrange } from '@mui/material/colors';
+import Logo from '../Logo/Logo'
+
+
 
 const Navigation = () => {
 
@@ -13,13 +14,13 @@ const Navigation = () => {
         <Navbar.Brand href="#home">
         <Logo />
       </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+  
+   
           <NavItems>
-            <StyledLink to="/">news</StyledLink>
+            <StyledLink exact  to="/">news</StyledLink>
             <StyledLink to="/ask">ask</StyledLink>
           </NavItems>
-        </Navbar.Collapse>
+
         </Container>
       </Navbar>
     );
