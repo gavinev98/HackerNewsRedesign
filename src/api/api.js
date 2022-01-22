@@ -13,7 +13,7 @@ export const storyURL = `${baseURL}item.json`;
 //using axios to retrieve newStory Ids.  
 export const getNewStoryIds = async () => {
     try {
-    const response = await axios.get(newStories).then(data => data);
+    const response = await axios.get(newStories).then(({data}) => data);
         return response;
     } catch(error) {
         console.log(error);

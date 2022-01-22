@@ -9,10 +9,11 @@ const HomeScreen = () => {
     //creation of state variable to store newStory Ids.
     const [newStoryIds, setNewStoryIds] = useState([]);
 
-    
+    //retrieve data from promise and set state of newStoryIds.
     useEffect(() => {
-     
-      },[]);
+     getNewStoryIds().then(data => setNewStoryIds(data));
+     console.log(newStoryIds);
+    },[]);
 
 
     return (
