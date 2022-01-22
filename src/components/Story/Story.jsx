@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button, Card } from 'react-bootstrap';
 import Loading from 'react-simple-loading';
 import { getStory } from '../../api/api';
+import { convertTime } from '../../utils/convertTime';
 import { CardBodyStyled } from './Story.styled';
 
 
@@ -21,8 +22,8 @@ const Story = ({ storyId }) => {
         <Card.Header style={{backgroundImage: 'linear-gradient(#FF5F6D, #FFC371)', borderBottom: 'none'}} as="h5">Score : {story.score}</Card.Header>
         <Card.Body>
         <Card.Title>{story.title}</Card.Title>
-        <Card.Subtitle>by {story.by}</Card.Subtitle>
-        <Card.Text>Posted :{story.time}</Card.Text>
+        <Card.Subtitle><b>by</b> {story.by}</Card.Subtitle>
+        <Card.Text><b>Posted:</b> {convertTime(story.time)}</Card.Text>
         <Button variant="outline-primary" href={story.url}>View Post</Button>
         </Card.Body>
       </CardBodyStyled>  
