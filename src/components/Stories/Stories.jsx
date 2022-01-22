@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getNewStoryIds, getStory } from '../../api/api';
+import { getNewStoryIds, getTopStoryIds } from '../../api/api';
 import { Button, Container } from 'react-bootstrap';
 import Story from '../Story/Story';
 import { StackContainer } from './Stories.styled';
@@ -7,18 +7,24 @@ import { StackContainer } from './Stories.styled';
 
 const Stories = () => {
     //creation of state variable to store newStory Ids.
-    const [newStoryIds, setNewStoryIds] = useState([]);
+    const [storyIds, setStoryIds] = useState([]);
+    //creation of state variable to store topPost Ids.
+    const[topStoryIds, setTopStoryIds] = useState([]);
 
+    
     useEffect(() => {
         //retrieve data from promise and set state of newStoryIds.
-        getNewStoryIds().then(data => setNewStoryIds(data));
+        getNewStoryIds().then(data => setStoryIds(data));
     }, []);
+
+
 
     return (
         <Container style={{ paddingTop : '5%', paddingBottom: '5%'}}>
-            <Button>Click Here</Button>
+            <Button onClick={() => getTopStoryIds().then(data => setStoryIds(data))}>Top Posts</Button>
+            <Button onClick={() => getNewStoryIds().then(data => setStoryIds(data))}>New Posts</Button>
            <StackContainer  gap={3}>
-               {newStoryIds.map(storyId =>(
+               {storyIds.map(storyId =>(
                     <Story key={storyId} storyId={storyId} />                   
                ))}
             </StackContainer>
