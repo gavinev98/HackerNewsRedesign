@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import { getNewStoryIds } from '../../api/api';
 import { Container } from 'react-bootstrap';
-import Posts from '../Posts/Posts';
+import Stories from '../Stories/Stories';
 
 
-const HomeScreen = () => {
+
+const Feed = () => {
 
     //creation of state variable to store newStory Ids.
     const [newStoryIds, setNewStoryIds] = useState([]);
@@ -12,16 +13,15 @@ const HomeScreen = () => {
     //retrieve data from promise and set state of newStoryIds.
     useEffect(() => {
      getNewStoryIds().then(data => setNewStoryIds(data));
-     console.log(newStoryIds);
     },[]);
 
 
     return (
         <Container fluid>
               <h1 style={{textAlign : 'center', paddingTop: '2%'}}>Todays Posts</h1>
-              <Posts />
+              <Stories />
         </Container>
     );
 };
 
-export default HomeScreen;
+export default Feed;

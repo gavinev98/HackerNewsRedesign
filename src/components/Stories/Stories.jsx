@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Post from '../Post/Post';
-import { StackContainer } from './Posts.styled';
+import Post from '../Story/Story';
+import { StackContainer } from './Stories.styled';
 
 
-const Posts = () => {
+const Stories = () => {
     return (
         <Container style={{ paddingTop : '5%', paddingBottom: '5%'}}>
            <StackContainer  gap={3}>
@@ -17,4 +17,4 @@ const Posts = () => {
     );
 };
 
-export default Posts;
+export default Stories;

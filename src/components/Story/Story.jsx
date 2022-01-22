@@ -1,9 +1,9 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { CardBodyStyled } from './Post.styled';
+import { CardBodyStyled } from './Story.styled';
 
 
-const Post = () => {
+const Story = () => {
     return (  
        <CardBodyStyled>
         <Card.Header style={{backgroundImage: 'linear-gradient(#FF5F6D, #FFC371)', borderBottom: 'none'}} as="h5">70 Points</Card.Header>
@@ -16,4 +16,4 @@ const Post = () => {
     );
 };
 
-export default Post;
+export default Story;
