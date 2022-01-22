@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Card } from 'react-bootstrap';
+import Loading from 'react-simple-loading';
 import { getStory } from '../../api/api';
 import { CardBodyStyled } from './Story.styled';
 
@@ -14,6 +15,7 @@ const Story = ({ storyId }) => {
     }, []);
 
     
+    
     //check if there is a story.
     return story && story.url ? (  
        <CardBodyStyled>
@@ -25,7 +27,7 @@ const Story = ({ storyId }) => {
         <Button variant="outline-primary" href={story.url}>View Post</Button>
         </Card.Body>
       </CardBodyStyled>  
-    ) : <p>There are no stories here.</p>
+    ) : <Loading />
 };
 
 export default Story;
