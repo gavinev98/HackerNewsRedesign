@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const StyledFooter = styled.footer`
+export const FooterContainer = styled.footer`
     flex-shrink: 0;
     text-align: center;
     background-color: white;

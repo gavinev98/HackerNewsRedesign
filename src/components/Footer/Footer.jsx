@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyledFooter } from './Footer.styled';
+import { FooterContainer } from './Footer.styled';
 
 
 const Footer = () => {
     return (
-        <StyledFooter className="footer">
-        <p>@HackerNews 2009 - 2022</p>
-      </StyledFooter>
+        <FooterContainer className="footer">
+        <p>Guidelines | FAQ | Lists | API | Security | Legal | Apply to YC | Contact</p>
+      </FooterContainer>
     );
 };
 

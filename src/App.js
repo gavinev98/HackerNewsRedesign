@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './components/Navigation/Navigation';
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 import HomeScreen from './components/HomeScreen/HomeScreen';
+import Footer from './components/Footer/Footer';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         </Route>
         </Routes>
       </div>
+      <Footer />
     </div>
     </Router>
   );
