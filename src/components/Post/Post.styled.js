@@ -4,4 +4,5 @@ import { Card } from 'react-bootstrap';
 //styling the card body.
 export const CardBodyStyled = styled(Card)`
       width:50%;
+      font-family: Tahoma, Verdana, sans-serif;
 `
