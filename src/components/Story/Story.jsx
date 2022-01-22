@@ -15,8 +15,7 @@ const Story = ({ storyId }) => {
     }, []);
 
     
-    
-    //check if there is a story.
+    //using ternary operator to check if story avaliable otherwise show loading component.
     return story && story.url ? (  
        <CardBodyStyled>
         <Card.Header style={{backgroundImage: 'linear-gradient(#FF5F6D, #FFC371)', borderBottom: 'none'}} as="h5">Score : {story.score}</Card.Header>

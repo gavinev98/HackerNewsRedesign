@@ -18,7 +18,7 @@ const Stories = () => {
         <Container style={{ paddingTop : '5%', paddingBottom: '5%'}}>
            <StackContainer  gap={3}>
                {newStoryIds.map(storyId =>(
-                    <Story storyId={storyId} />                   
+                    <Story key={storyId} storyId={storyId} />                   
                ))}
             </StackContainer>
         </Container>
