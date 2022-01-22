@@ -6,17 +6,13 @@ import { StackContainer } from './Stories.styled';
 
 
 const Stories = () => {
-
     //creation of state variable to store newStory Ids.
     const [newStoryIds, setNewStoryIds] = useState([]);
 
-    //retrieve data from promise and set state of newStoryIds.
     useEffect(() => {
+        //retrieve data from promise and set state of newStoryIds.
         getNewStoryIds().then(data => setNewStoryIds(data));
     }, []);
-
-
-
 
     return (
         <Container style={{ paddingTop : '5%', paddingBottom: '5%'}}>
