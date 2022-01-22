@@ -14,7 +14,7 @@ export const storyURL = `${baseURL}item/`;
 //retrieve individual stories.
 export const getStory = async (storyID) => {
     try{
-     const response = await axios.get(`${storyURL + storyID}.json`).then(({data}) => chooseFields((data)));
+     const response = await axios.get(`${storyURL + storyID}.json`).then(({data}) => data && chooseFields((data)));
      return response;
     }catch(error) {
         console.log(error);
