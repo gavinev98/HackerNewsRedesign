@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { chooseFields } from '../utils/chooseFields';
 
 //creating a base url to the hackerAPI website
 export const baseURL = 'https://hacker-news.firebaseio.com/v0/';
@@ -13,7 +14,7 @@ export const storyURL = `${baseURL}item/`;
 //retrieve individual stories.
 export const getStory = async (storyID) => {
     try{
-     const response = await axios.get(`${storyURL + storyID}.json`).then(({data}) => data);
+     const response = await axios.get(`${storyURL + storyID}.json`).then(({data}) => chooseFields((data)));
      return response;
     }catch(error) {
         console.log(error);
