@@ -21,11 +21,20 @@ export const getStory = async (storyID) => {
     }
 }
 
-
 //retrieve new story ids.  
 export const getNewStoryIds = async () => {
     try {
     const response = await axios.get(newStories).then(({data}) => data);
+    return response; 
+    } catch(error) {
+        console.log(error);
+    } 
+}
+
+//retrieve top story ids.  
+export const getTopStoryIds = async () => {
+    try {
+    const response = await axios.get(topStories).then(({data}) => data);
     return response; 
     } catch(error) {
         console.log(error);

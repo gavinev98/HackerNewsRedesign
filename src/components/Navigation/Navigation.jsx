@@ -9,7 +9,7 @@ const Navigation = () => {
 
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar collapseOnSelect expand="lg">
         <Container>
         <Navbar.Brand href="#home">
         <Logo />
