@@ -7,6 +7,7 @@ export const Filters = styled.button`
     color: black;
     border:none;
     border-radius:none;
+    font-weight:600;
     &:hover {
         background-color:#ff6600;
         color:white;
