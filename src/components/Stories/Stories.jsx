@@ -15,7 +15,7 @@ const Stories = () => {
         getNewStoryIds().then(data => setStoryIds(data));
     }, []);
 
-
+    
     return (
         <Container style={{ paddingTop : '5%', paddingBottom: '5%'}}>
             <Filter handleNew={() => getNewStoryIds().then(data => setStoryIds(data))} handleTop={() => getTopStoryIds().then(data => setStoryIds(data))} />

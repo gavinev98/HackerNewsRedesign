@@ -16,10 +16,10 @@ const Story = ({ storyId }) => {
     
     return story && story.url ? (  
        <CardBodyStyled>
-        <Card.Header style={{backgroundImage: 'linear-gradient(#FF5F6D, #FFC371)', borderBottom: 'none'}} as="h5">Score : {story.score}</Card.Header>
+        <Card.Header style={{backgroundImage: 'linear-gradient(#FF5F6D, #FFC371)', borderBottom: 'none', borderRadius: 0}} as="h5">Score: {story.score}</Card.Header>
         <Card.Body>
         <Card.Title>{story.title}</Card.Title>
-        <Card.Subtitle><b>by</b> {story.by}</Card.Subtitle>
+        <Card.Subtitle><b>By:</b> {story.by}</Card.Subtitle>
         <Card.Text><b>Posted:</b> {convertTime(story.time)}</Card.Text>
         <Button variant="outline-primary" href={story.url}>View Post</Button>
         </Card.Body>
