@@ -6,17 +6,12 @@ import { StackContainer } from './Stories.styled';
 
 
 const Stories = () => {
-    //creation of state variable to store newStory Ids.
-    const [storyIds, setStoryIds] = useState([]);
-    //creation of state variable to store topPost Ids.
-    const[topStoryIds, setTopStoryIds] = useState([]);
 
-    
+    const[storyIds, setStoryIds] = useState([]);
+
     useEffect(() => {
-        //retrieve data from promise and set state of newStoryIds.
         getNewStoryIds().then(data => setStoryIds(data));
     }, []);
-
 
 
     return (

@@ -6,8 +6,6 @@ import Logo from '../Logo/Logo'
 
 
 const Navigation = () => {
-
-
     return (
         <Navbar collapseOnSelect expand="lg">
         <Container>
@@ -22,7 +20,6 @@ const Navigation = () => {
             <StyledLink to="/jobs">jobs</StyledLink>
             <StyledLink to="/submit">submit</StyledLink>
           </NavItems>
-
         </Container>
       </Navbar>
     );

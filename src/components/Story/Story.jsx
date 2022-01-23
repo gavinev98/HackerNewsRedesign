@@ -7,16 +7,14 @@ import { CardBodyStyled } from './Story.styled';
 
 
 const Story = ({ storyId }) => {
-    //creation of state variable to store story.
+
     const[story, setStory] = useState({});
 
     useEffect(() => {
-       //retrieve individual story.
       getStory(storyId).then(data => data && data.url && setStory(data));
     }, []);
 
     
-    //using ternary operator to check if story avaliable otherwise show loading component.
     return story && story.url ? (  
        <CardBodyStyled>
         <Card.Header style={{backgroundImage: 'linear-gradient(#FF5F6D, #FFC371)', borderBottom: 'none'}} as="h5">Score : {story.score}</Card.Header>

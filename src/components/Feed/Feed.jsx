@@ -5,8 +5,6 @@ import Stories from '../Stories/Stories';
 
 
 const Feed = () => {
-
-
     return (
         <Container fluid>
               <h1 style={{textAlign : 'center', paddingTop: '2%'}}>Todays Posts</h1>
