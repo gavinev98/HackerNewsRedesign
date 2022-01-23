@@ -6,7 +6,6 @@ import { StackContainer } from './Stories.styled';
 import Filter from '../Filter/Filter';
 import { useInfiniteScrolling } from '../../hooks/useInfiniteScrolling';
 
-
 const Stories = () => {
     const { items } = useInfiniteScrolling();
     const[storyIds, setStoryIds] = useState([]);

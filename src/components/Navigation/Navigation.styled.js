@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 
-
-//adding additional paddings between logo and navbar items.
 export const NavItems = styled.nav`
     padding-left: 60%;
     display:flex;
@@ -24,7 +22,7 @@ export const NavItems = styled.nav`
 
  }
 `
-//adding additional styling to each individual nav link item.
+
 export const StyledLink = styled(NavLink)`
     margin-right: 20%;
     font-family: Tahoma, Verdana, sans-serif;

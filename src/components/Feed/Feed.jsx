@@ -1,7 +1,6 @@
 import { Container } from 'react-bootstrap';
 import Stories from '../Stories/Stories';
 
-
 const Feed = () => {
     return (
         <Container fluid>
