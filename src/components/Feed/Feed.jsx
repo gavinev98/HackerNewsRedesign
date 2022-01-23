@@ -1,7 +1,5 @@
-import React, {useEffect, useState} from 'react';
 import { Container } from 'react-bootstrap';
 import Stories from '../Stories/Stories';
-
 
 
 const Feed = () => {

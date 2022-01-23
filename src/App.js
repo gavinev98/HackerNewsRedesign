@@ -11,12 +11,10 @@ const App = () => {
     <Router>
     <div >
        <Navigation />
-       <div>
         <Routes>
         <Route exact path="/" element={<Feed />}>
         </Route>
         </Routes>
-      </div>
       <Footer />
     </div>
     </Router>

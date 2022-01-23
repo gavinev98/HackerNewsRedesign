@@ -13,7 +13,7 @@ const Navigation = () => {
         <Logo />
       </Navbar.Brand>
           <NavItems>
-            <StyledLink exact  to="/">news</StyledLink>
+            <StyledLink exact  to="/">stories</StyledLink>
             <StyledLink to="/ask">ask</StyledLink>
             <StyledLink to="/comments">comments</StyledLink>
             <StyledLink to="/show">show</StyledLink>

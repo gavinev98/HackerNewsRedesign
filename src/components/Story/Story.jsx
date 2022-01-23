@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Card } from 'react-bootstrap';
-import Loading from 'react-simple-loading';
 import { getStory } from '../../api/api';
 import { convertTime } from '../../utils/convertTime';
 import { CardBodyStyled } from './Story.styled';
@@ -12,7 +11,7 @@ const Story = ({ storyId }) => {
 
     useEffect(() => {
       getStory(storyId).then(data => data && data.url && setStory(data));
-    }, []);
+    }, [storyId]);
 
     
     return story && story.url ? (  
@@ -25,7 +24,7 @@ const Story = ({ storyId }) => {
         <Button variant="outline-primary" href={story.url}>View Post</Button>
         </Card.Body>
       </CardBodyStyled>  
-    ) : <Loading />
+    ) : null
 };
 
 export default Story;

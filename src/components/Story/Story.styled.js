@@ -3,6 +3,7 @@ import { Card } from 'react-bootstrap';
 
 //styling the card body.
 export const CardBodyStyled = styled(Card)`
-      width:50%;
+      width:70%;
       font-family: Tahoma, Verdana, sans-serif;
+      border:none;
 `
