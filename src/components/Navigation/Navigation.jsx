@@ -8,7 +8,7 @@ const Navigation = () => {
         <Navbar collapseOnSelect expand="lg">
         <Container>
         <Navbar.Brand href="#home">
-        <Logo />
+        <Logo alt="hackernewslogo"/>
       </Navbar.Brand>
           <NavItems>
             <StyledLink exact  to="/">stories</StyledLink>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, memo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { getNewStoryIds, getTopStoryIds } from '../../api/api';
 import { Container } from 'react-bootstrap';
 import Story from '../Story/Story';
