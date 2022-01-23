@@ -1,7 +1,7 @@
 export const storyIds = [123];
 
 export const singleStory = {
-    id : 1,
+    id : 123,
     by : 'Joe Bloggs',
     url : 'http://testing.com/testing',
     time : 1349440685,
