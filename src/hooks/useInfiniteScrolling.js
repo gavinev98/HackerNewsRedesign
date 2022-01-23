@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useState } from 'react';
 import { STORIES, MAX_STORIES } from '../Constants/index';
 
-const useInfiniteScrolling = () => {
+export const useInfiniteScrolling = () => {
     const[loading, setLoading] = useState(false);
     const[items, setItems] = useState(STORIES);
     
@@ -11,6 +12,22 @@ const useInfiniteScrolling = () => {
       }
         setLoading(true);
     };
-};
 
-export default useInfiniteScrolling;
+    useEffect(() => {
+        if(!loading) return;
+  
+        if(items + STORIES >= MAX_STORIES) {
+          setItems(MAX_STORIES);
+        } else {
+          setItems(items + STORIES);
+        }
+        setLoading(false);
+      }, [loading]);
+
+    useEffect(() => {
+     window.addEventListener('scroll', handleScroll);
+     return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+    
+    return { items };
+};
