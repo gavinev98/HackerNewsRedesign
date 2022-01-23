@@ -18,7 +18,7 @@ const Stories = () => {
 
     return (
         <Container style={{ paddingTop : '5%', paddingBottom: '5%'}}>
-            <Filter handleNew={() => getNewStoryIds().then(data => setStoryIds(data))} handleTop={() => getTopStoryIds().then(data => setStoryIds(data))}></Filter>
+            <Filter handleNew={() => getNewStoryIds().then(data => setStoryIds(data))} handleTop={() => getTopStoryIds().then(data => setStoryIds(data))} />
            <StackContainer  gap={3}>
                {storyIds.map(storyId =>(
                     <Story key={storyId} storyId={storyId} />                   
