@@ -17,7 +17,7 @@ const Story = ({ storyId }) => {
         <Card.Header style={{backgroundImage: 'linear-gradient(#FF5F6D, #FFC371)', borderBottom: 'none', borderRadius: 0}} as="h5">Score: {story.score}</Card.Header>
         <Card.Body>
         <Card.Title>{story.title}</Card.Title>
-        <Card.Subtitle><b>By:</b> {story.by}</Card.Subtitle>
+        <Card.Subtitle data-testid="story-creator"><b>By:</b> {story.by}</Card.Subtitle>
         <Card.Text><b>Posted:</b> {convertTime(story.time)}</Card.Text>
         <Button variant="outline-primary" href={story.url}>View Post</Button>
         </Card.Body>
