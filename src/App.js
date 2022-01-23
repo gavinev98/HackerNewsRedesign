@@ -1,4 +1,3 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './components/Navigation/Navigation';
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
