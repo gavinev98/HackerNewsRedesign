@@ -6,14 +6,12 @@ import { CardBodyStyled } from './Story.styled';
 
 
 const Story = ({ storyId }) => {
-
     const[story, setStory] = useState({});
 
     useEffect(() => {
       getStory(storyId).then(data => data && data.url && setStory(data));
     }, [storyId]);
 
-    
     return story && story.url ? (  
        <CardBodyStyled>
         <Card.Header style={{backgroundImage: 'linear-gradient(#FF5F6D, #FFC371)', borderBottom: 'none', borderRadius: 0}} as="h5">Score: {story.score}</Card.Header>

@@ -3,8 +3,6 @@ import { Navbar, Container } from 'react-bootstrap';
 import { NavItems, StyledLink } from './Navigation.styled';
 import Logo from '../Logo/Logo'
 
-
-
 const Navigation = () => {
     return (
         <Navbar collapseOnSelect expand="lg">
