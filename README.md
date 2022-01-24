@@ -18,6 +18,10 @@
 
 In the project directory, you can run:
 
+### `npm install react-scripts --save`
+
+To install dependencies.
+
 ### `yarn start` or `npm start`
 
 Runs the app in the development mode.\
