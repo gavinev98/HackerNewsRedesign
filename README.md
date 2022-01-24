@@ -35,4 +35,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-[product-screenshot]: src/assets/sitedesign.PNG
+[product-screenshot]: src/assets/site.PNG
